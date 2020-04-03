@@ -56,3 +56,7 @@ body {
     margin-right: auto;
     width: 70%;
 }
+
+.collapsable p {
+    visibility: visible;
+}

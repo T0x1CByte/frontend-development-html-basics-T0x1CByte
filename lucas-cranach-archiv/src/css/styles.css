@@ -1,33 +1,38 @@
+html,
 body {
     color: white;
+    height: 100%;
+    overflow: hidden;
 }
 
 .detail-view {
-    max-width: 75rem;
-    max-height: 45rem;
+    width: 75rem;
+    height: 45rem;
     margin: auto;
     background-color: #313131;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .content-pane {
     float: right;
-    background-color: #2D2D2D;
+    flex-direction: column;
+    display: flex;
     width: 60%;
+    height: 45rem;
+    background-color: #2D2D2D;
+    overflow: auto;
 }
 
 .content-pane section {
     margin-left: 2rem;
     margin-right: 2rem;
-    max-height: 45rem;
-    overflow-y: scroll;
 }
 
 .content-pane section::after {
-    width: 100%;
-    height: 1px;
+    display: block;
     background: #fff;
-    content: ""
+    height: 1px;
+    content: "";
 }
 
 .main {
@@ -40,14 +45,7 @@ body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.main h3 {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    color: --gray;
+    color: #aaaaaa;
 }
 
 .main img {

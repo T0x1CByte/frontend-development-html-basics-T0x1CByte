@@ -57,6 +57,7 @@ body {
     width: 70%;
 }
 
-.collapsable p {
+.collapsable div {
     visibility: visible;
+    overflow: hidden;
 }

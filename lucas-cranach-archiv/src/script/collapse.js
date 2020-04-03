@@ -1,7 +1,10 @@
-$("section.collapsable").on("click", (event) => {
-    if ($(this).children('p')[0].css('visibility') == hidden) {
-        $(this).children('p')[0].css('visibility', 'visible')
+$(".collapsable h3").on("click", (event) => {
+    console.log($(event.target).parent().children('div')[0]);
+    if ($(event.target).parent().children('div')[0].style.visibility == "hidden") {
+        $(event.target).parent().children('div')[0].style.visibility = "visible";
+        $(event.target).parent().children('div')[0].style.height = "auto";
     } else {
-        $(this).children('p')[0].css('visibility', 'hidden')
+        $(event.target).parent().children('div')[0].style.visibility = "hidden";
+        $(event.target).parent().children('div')[0].style.height = "0px";
     }
 });
